@@ -1,0 +1,67 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="text-center mb-4">Iniciar Sesión</h2>
+
+          <!-- Mensaje de error del servidor (si aplica) -->
+          <div class="alert alert-danger" role="alert" style="display: none">
+            Error al iniciar sesión
+          </div>
+
+          <form>
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+              />
+              <div class="text-danger" style="display: none">
+                El email es obligatorio
+              </div>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                id="password"
+              />
+              <div class="text-danger" style="display: none">
+                La contraseña es obligatoria
+              </div>
+            </div>
+
+            <!-- Checkbox Mostrar contraseña -->
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="showPasswordCheckbox"
+              />
+              <label class="form-check-label" for="showPasswordCheckbox"
+                >Mostrar contraseña</label
+              >
+            </div>
+
+            <!-- Botón de enviar -->
+            <button type="submit" class="btn btn-primary w-100">
+              Iniciar Sesión
+            </button>
+          </form>
+
+          <div class="mt-3 text-center">
+            <p>¿No tienes una cuenta? <a href="/register">Regístrate</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
